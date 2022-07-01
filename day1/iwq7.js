@@ -4,13 +4,12 @@ let users = [
     { firstName: "Yogesh", lastName: "Bhat", place: "Kolkata" },
   ];
      
-    let out=users.filter(function (el){
-       return (el.place=="Banglore")
+    let out=users.map(function (el){
+       return (el.firstName + " " + el.lastName)
 
 
-    }).map(function (el){
-       return el.firstName
     })
+
     console.log(out);
     
 
